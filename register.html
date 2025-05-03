@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>ReClaimMe</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body class="bg">
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img alt="ReClaimMe logo" class="logo" src="logo.jpg"/>
+            </div>
+            <h1 class="header-title">ReClaimMe</h1>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="image-container">
+            <img alt="image" class="main-image" src="img.jpg"/>
+        </div>
+        <form aria-label="Register form" class="register-form">
+            <h2 class="form-title">Register</h2>
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" id="name" type="text"/>
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" id="email" type="email"/>
+            <label class="form-label" for="contact">Contact No.</label>
+            <input class="form-input" id="contact" type="text"/>
+            <label class="form-label" for="username">Username</label>
+            <input class="form-input" id="username" type="text"/>
+            <label class="form-label" for="password">Password</label>
+            <div class="password-container">
+                <input class="form-input" id="password" type="password"/>
+                <span class="toggle-password">
+                </span>
+            </div>
+            <label class="form-label" for="confirm-password">Confirm Password</label>
+            <div class="password-container">
+                <input class="form-input" id="confirm-password" type="password"/>
+                <span class="toggle-password">
+                </span>
+            </div>
+            <button class="submit-button" type="submit">Submit</button>
+            <div class="sign-in-container">
+            <p class="sign-in-text">Already have an account?</p> 
+            <button class="sign-in-text" type="button" onclick="window.location.href='login.html'">Sign in</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo-container">
+                <div class="footer-logo">
+                    <img alt="ReClaimMe logo" class="footer-logo-img" src="logo.jpg"/>
+                </div>
+                <div class="footer-info">
+                    <h2 class="footer-title">ReClaimMe</h2>
+                    <p class="footer-description">Lost items? We've got a team dedicated to bringing them back to you.</p>
+                </div>
+            </div>
+            <div class="footer-center">
+                <p>© Copyright 2025 ReClaimMe</p>
+                <p>All Right Reserved</p>
+            </div>
+            <div class="footer-contact">
+            <p class="contact-title">Contact</p>
+            <p>Tel: +93463575478</p>
+            <p>Email: reclaimme@gmail.com</p>
+        <div class="social-icons">
+                    <a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a aria-label="Twitter" href="#"><i class="fab fa-twitter"></i></a>
+                    <a aria-label="Instagram" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

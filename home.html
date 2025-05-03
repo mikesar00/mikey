@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReClaimMe - Home</title>
+    <link rel="stylesheet" href="homee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="" class="logo">ReClaimMe</a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#lost">Lost</a>
+                <a href="#report-lost">Report Lost</a>
+                <a href="#found">Found</a>
+                <a href="#report-found">Report Found</a>
+                <a href="#profile">Profile</a>
+                <a href="#sign-out">Sign Out</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1 class="title">ReClaimMe</h1>
+            <p class="subtitle">Lost items? We've got a team dedicated to bringing them back to you.</p>
+            <div class="home-buttons">
+                <a href="#lost" class="action-button lost">Lost</a>
+                <a href="#found" class="action-button found">Found</a>
+            </div>
+        </div>
+        <div class="home-image">
+            <img src="man-removebg-preview.png" alt="Illustration of a man" class="illustration">
+        </div>
+    </section>
+
+    <!-- Lost Section -->
+    <section id="lost" class="Lost">
+        <h2 class="lost-title">Lost Items</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Item Name" class="search-input">
+            <button class="report-button">Report</button>
+        </div>
+        <div class="lost-items">
+            <div class="lost-item">
+                <div class="lost-item-image">
+                    <img src="placeholder-image.png" alt="Lost Item Thumbnail">
+                </div>
+                <div class="lost-item-info">
+                    <h3>Item Name</h3>
+                    <p>Date: XX/XX/XXXX</p>
+                    <p>Title: </p>
+                    <p>Location: </p>
+                    <p>Description:</p>
+                    <button class="contact-button">Contact</button>
+                </div>
+            </div>
+            <div class="lost-item">
+                <div class="lost-item-image">
+                    <img src="placeholder-image.png" alt="Lost Item Thumbnail">
+                </div>
+                <div class="lost-item-info">
+                    <h3>Item Name</h3>
+                    <p>Date: XX/XX/XXXX</p>
+                    <p>Title: </p>
+                    <p>Location: </p>
+                    <p>Description:</p>
+                    <button class="contact-button">Contact</button>
+                </div>
+            </div>
+            <div class="lost-item">
+                <div class="lost-item-image">
+                    <img src="placeholder-image.png" alt="Lost Item Thumbnail">
+                </div>
+                <div class="lost-item-info">
+                    <h3>Item Name</h3>
+                    <p>Date: XX/XX/XXXX</p>
+                    <p>Title: </p>
+                    <p>Location: </p>
+                    <p>Description:</p>
+                    <button class="contact-button">Contact</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Report Lost Section -->
+<section id="report-lost" class="report-lost">
+    <h2 class="report-title">Report Lost Item</h2>
+    <form class="report-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="item">Item:</label>
+        <input type="text" id="item" name="item" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="description">Item Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo">
+
+        <div class="form-buttons">
+            <button type="submit" class="submit-button">Submit</button>
+            <button type="button" class="cancel-button" onclick="window.location.href='#lost';">Cancel</button>
+        </div>
+    </form>
+</section>
+
+<section id="Found" class="Found">
+    <h2 class="Found">Found</h2>
+    <form class="search-bar">
+        </section>
+
+    <!-- Footer -->
+    <footer id="sign-out" class="footer">
+        <div class="footer-left">
+            <h2 class="footer-title">ReClaimMe</h2>
+            <p class="footer-description">Lost items? We've got a team dedicated to bringing them back to you.</p>
+        </div>
+        <div class="footer-center">
+            <p>© Copyright 2025 ReClaimMe</p>
+            <p>All Rights Reserved</p>
+        </div>
+        <div class="footer-right">
+            <p class="contact-title">Contact</p>
+            <p>Tel: +93463575478</p>
+            <p>Email: reclaimme@gmail.com</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

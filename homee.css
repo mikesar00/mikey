@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+
+body {
+    background: #4d4c4c; /* Light grey background */
+    color: #000000; /* Dark text color for better contrast */
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10%;
+    background: rgba(49, 49, 49, 0.9); /* Light background for header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    color: #e6e6e6;
+    font-weight: 600;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.navbar a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 35px;
+    padding: 25px 15px;
+    border-radius: 1px;
+    transition: background-color 2s ease;
+    
+}
+.navbar a:hover {
+    background-color: #e0e0e0; /* Light hover effect */
+}
+
+/* Home Section Styles */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: calc(100vh - 60px); /* Adjust height for header */
+    padding: 10% 10%;
+    background: #c5c3c3; /* Match background with body */
+}
+
+.home-content {
+    max-width: 700px;
+    padding: 100;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #555; /* Slightly lighter for readability */
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    background-color: #333; /* Dark button color */
+    border: none;
+    border-radius: 8px;
+    padding: 15px 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #ac660b; /* Highlight color on hover */
+}
+
+
+
+/* Lost Section Styles */
+.Lost {
+    background-color: #5f5c5c;
+    padding: 30px 15%;
+    color: white;
+    text-align: center;
+    margin: 50px;
+}
+
+.lost-title {
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+
+.search-bar {
+    margin: 30px 30;
+}
+
+.search-input {
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 30px;
+}
+
+.report-button {
+    padding: 20px 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.lost-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.lost-item {
+    background-color: #ffffff;
+    color: #0e0c0c;
+    border-radius: 20px;
+    padding: 15px;
+    max-width: 250px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lost-item-image {
+    text-align: center;
+}
+
+.lost-item-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contact-button {
+    padding: 10px 15px;
+    background-color: #29d806;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.report-lost {
+    padding: 20px;
+    background-color: #dadada;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.report-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.report-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.report-form label {
+    margin: 2opx 0 5px;
+}
+
+.report-form input, .report-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-button, .cancel-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.cancel-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #272727; /* Dark background for footer */
+    color: white;
+    padding: 7px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #555;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.footer-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer-description {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff6b6b; /* Highlight social icons on hover */
+}
