@@ -16,8 +16,8 @@
                 <a href="#home">Home</a>
                 <a href="#lost">Lost</a>
                 <a href="#report-lost">Report Lost</a>
-                <a href="#found">Found</a>
-                <a href="#report-found">Report Found</a>
+                <a href="#Found">Found</a>
+                <a href="#report-Found">Report Found</a>
                 <a href="#profile">Profile</a>
                 <a href="#sign-out">Sign Out</a>
             </nav>
@@ -31,7 +31,7 @@
             <p class="subtitle">Lost items? We've got a team dedicated to bringing them back to you.</p>
             <div class="home-buttons">
                 <a href="#lost" class="action-button lost">Lost</a>
-                <a href="#found" class="action-button found">Found</a>
+                <a href="#Found" class="action-button found">Found</a>
             </div>
         </div>
         <div class="home-image">
@@ -49,7 +49,7 @@
         <div class="lost-items">
             <div class="lost-item">
                 <div class="lost-item-image">
-                    <img src="placeholder-image.png" alt="Lost Item Thumbnail">
+                    <img src="img.jpg" alt="Lost Item Thumbnail">
                 </div>
                 <div class="lost-item-info">
                     <h3>Item Name</h3>
@@ -62,7 +62,7 @@
             </div>
             <div class="lost-item">
                 <div class="lost-item-image">
-                    <img src="placeholder-image.png" alt="Lost Item Thumbnail">
+                    <img src="img.jpg" alt="Lost Item Thumbnail">
                 </div>
                 <div class="lost-item-info">
                     <h3>Item Name</h3>
@@ -75,7 +75,7 @@
             </div>
             <div class="lost-item">
                 <div class="lost-item-image">
-                    <img src="placeholder-image.png" alt="Lost Item Thumbnail">
+                    <img src="img.jpg" alt="Lost Item Thumbnail">
                 </div>
                 <div class="lost-item-info">
                     <h3>Item Name</h3>
@@ -119,10 +119,86 @@
     </form>
 </section>
 
-<section id="Found" class="Found">
-    <h2 class="Found">Found</h2>
-    <form class="search-bar">
-        </section>
+
+    <!-- Found Section -->
+    <section id="Found" class="Found">
+        <h2 class="Found">Found Items</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Item Name" class="search-input">
+            <button class="report-button">Report</button>
+        </div>
+        <div class="Found-items">
+            <div class="Found-item">
+                <div class="Found-item-image">
+                    <img src="img.jpg" alt="Found Item Thumbnail">
+                </div>
+                <div class="Found-item-info">
+                    <h3>Item Name</h3>
+                    <p>Date: XX/XX/XXXX</p>
+                    <p>Title: </p>
+                    <p>Location: </p>
+                    <p>Description:</p>
+                    <button class="contact-button">Contact</button>
+                </div>
+            </div>
+            <div class="Found-item">
+                <div class="Found-item-image">
+                    <img src="img.jpg" alt="Found Item Thumbnail">
+                </div>
+                <div class="Found-item-info">
+                    <h3>Item Name</h3>
+                    <p>Date: XX/XX/XXXX</p>
+                    <p>Title: </p>
+                    <p>Location: </p>
+                    <p>Description:</p>
+                    <button class="contact-button">Contact</button>
+                </div>
+            </div>
+            <div class="Found-item">
+                <div class="Found-item-image">
+                    <img src="img.jpg" alt="Found Item Thumbnail">
+                </div>
+                <div class="Found-item-info">
+                    <h3>Item Name</h3>
+                    <p>Date: XX/XX/XXXX</p>
+                    <p>Title: </p>
+                    <p>Location: </p>
+                    <p>Description:</p>
+                    <button class="contact-button">Contact</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Found Section -->
+<section id="report-Found" class="report-Found">
+    <h2 class="report-title">Report Found Item</h2>
+    <form class="report-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="item">Item:</label>
+        <input type="text" id="item" name="item" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="description">Item Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo">
+
+        <div class="form-buttons">
+            <button type="submit" class="submit-button">Submit</button>
+            <button type="button" class="cancel-button" onclick="window.location.href='#lost';">Cancel</button>
+        </div>
+    </form>
+</section>
+
 
     <!-- Footer -->
     <footer id="sign-out" class="footer">
